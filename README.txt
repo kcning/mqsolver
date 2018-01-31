@@ -4,14 +4,22 @@ NAME
 DESCRIPTION
     C implementation of the Parallel Crossbred algorithm for solving
     Fukuoka MQ challenges on GPUs.
+    
+DOCUMENTATION
+    For the thesis, see msc_thesis.pdf
+    For the paper, see https://eprint.iacr.org/2017/1181
+
+    Note that for the security strength estimation, one should refer to the paper
+    as it provides more accurate results.
 
 DEPENDENCIES
     cmake, make, python3, gcc, CUDA
 
 OPTIONAL DEPENDENCIES
     ssh (for cluster mode)
+    ruby (for some scripts in the bin dir)
 
-RUN
+OPTIONS
     see the help message of solve.py
 
 EXAMPLE
