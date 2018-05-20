@@ -26,6 +26,8 @@ endif()
 # compilation flags
 # ========================================================================== #
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 include(CheckCCompilerFlag)
 
 check_c_compiler_flag("-Wall" COMPILER_C_ALL_WARN)
