@@ -101,7 +101,7 @@ print_usage(char* prg_name) {
    "  %s --algorithm=crossbred --challenge=toy_example.txt --macaulay_deg=4\n"
    "    --keep_var=18 --mac_keq=32 --mailbox_size=1000\n"
    "                            \n"
-   "\n", prg_name, prg_name, prg_name, prg_name);
+   "\n", prg_name, prg_name, prg_name);
 }
 
 /* function: options_init

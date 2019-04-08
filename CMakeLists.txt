@@ -52,7 +52,7 @@ if(COMPILER_C_PIPE)
 endif()
 
 set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -Xcompiler='${CMAKE_C_FLAGS}'"
-    CACHE STEING "Pass the same C flags to back-end compiler of nvcc" FORCE
+    CACHE STRING "Pass the same C flags to back-end compiler of nvcc" FORCE
 )
 
 check_c_compiler_flag("-mavx" COMPILER_C_AVX)
@@ -99,7 +99,7 @@ endif()
 
 set(CMAKE_CUDA_FLAGS_RELEASE
     "${CMAKE_CUDA_FLAGS_RELEASE} -Xcompiler='${CMAKE_C_FLAGS_RELEASE}'"
-    CACHE STEING "Pass the same C release flags to back-end compiler of nvcc"
+    CACHE STRING "Pass the same C release flags to back-end compiler of nvcc"
     FORCE
 )
 
